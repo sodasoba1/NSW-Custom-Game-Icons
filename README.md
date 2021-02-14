@@ -3,7 +3,7 @@
 #### Default icons for any theme - used with @p-sam 's [sys_tweek](https://github.com/p-sam/switch-sys-tweak) ####
 _Details about this mod [GBAtemp](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub-no-forwarders.574675/)_
 
-![](https://placehold.it/100x100/009955/fff?text=256x256)-» [DEFAULT ICONS](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Default)    ![](https://placehold.it/150x100/009955/fff?text=422x256)-» [Horizontal Icons](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Horizontal)
+-» [DEFAULT ICONS](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Default) «- + -» [Horizontal Icons](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Horizontal) «-
 
 |![](https://placehold.it/200x10/ff6600/000?text=+)| PLEASE NOTE |![](https://placehold.it/200x10/ff6600/000?text=+)|
 
