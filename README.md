@@ -5,12 +5,9 @@ _Details about this mod [GBAtemp](https://gbatemp.net/threads/custom-game-icons-
 
 ![](https://placehold.it/100x100/009955/fff?text=256x256)-» [DEFAULT ICONS](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Default)    ![](https://placehold.it/150x100/009955/fff?text=422x256)-» [Horizontal Icons](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Horizontal)
 
-![](https://placehold.it/500x10/ff6600/000?text=PLEASE)
+|![](https://placehold.it/200x10/ff6600/000?text=+)| PLEASE NOTE |![](https://placehold.it/200x10/ff6600/000?text=+)|
 
 Horizontal Icons Require @Hotshotz79 [Switch Horizontal Theme](https://github.com/hotshotz79/NX-Custom-Game-Icons)
-
-![](https://placehold.it/500x10/ff6600/000?text=NOTE)
-
 
 Horizontal icons are resized to 256x256 but when the horizontal theme is applied the icons show correctly
 
