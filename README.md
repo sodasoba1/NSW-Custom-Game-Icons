@@ -7,11 +7,13 @@ _Details about this mod [GBAtemp](https://gbatemp.net/threads/custom-game-icons-
 
 -» [HORIZONTAL ICONS](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Horizontal) «-
 
+-» [VERTICAL ICONS](https://github.com/sodasoba1/NSW-Custom-Game-Icons/tree/main/Vertical) «-
+
 |![](https://placehold.it/200x10/ff6600/000?text=+)| PLEASE NOTE |![](https://placehold.it/200x10/ff6600/000?text=+)|
 
-Horizontal Icons Require @Hotshotz79 [Switch Horizontal Theme](https://github.com/hotshotz79/NX-Custom-Game-Icons)
+Horizontal + Vertical Icons Require @Hotshotz79 [Switch Horizontal Theme](https://github.com/hotshotz79/NX-Custom-Game-Icons)
 
-Horizontal icons are resized to 256x256 but when the horizontal theme is applied the icons show correctly
+Horizontal icons are resized to 256x256 but when the horizontal theme is applied the icons show correctly, this same method also applies to the vertical icons
 
 <img src="https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/raw/main/Horizontal/C/cuphead-icon003-%5B0100A5C00D162000%5D.jpg" width="128" height="128"> changes to <img src="https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/raw/main/Horizontal/C/cuphead-icon003-%5B0100A5C00D162000%5D.jpg" height="128" width="211">
 
