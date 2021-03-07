@@ -29,7 +29,7 @@ Horizontal icons are resized to 256x256 but when the horizontal theme is applied
 ![HorizontalTheme](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/raw/main/VL8e.jpg)
 
 Credits & Thanks
-~~~~~~~~~~~~~~~~
+----------------
 
 cucholix @ GBATemp for sharing the process to making these work
 
