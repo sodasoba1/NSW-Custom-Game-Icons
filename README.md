@@ -2,27 +2,34 @@
 #### This repo is mainly for  [NX-GIC](https://github.com/hotshotz79/NX-Game-Icon-Customizer) @hotshotz79 ####
 
 
-#### Tutorial may be edited and Altered when nx-gic is updated ####
+##### Tutorial may be edited and Altered when nx-gic is updated #####
+## Written for nx-gic v1.3.0 ##
 
-:page_with_curl: to use this repo correctly you will need to preapare your switch first, this entire guide is for *atmosphere*
->I've never tested under sxos I'm unsure if it works for sxos.
+:memo: to use this repo correctly you will need to preapare your switch first :memo:
+
+:heavy_check_mark: this entire guide and process only works on atmosphere
+
+:x: sxos will not work :x:
+
 ***
-Prerequisite items recommended for this tutorial:
 
- * Nintendo Switch
-   * [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere) -CFW
-   * [ftpd](https://github.com/mtheall/ftpd/releases/) -nro/homebrew
-   * [NXThemesInstaller](https://github.com/exelix11/SwitchThemeInjector/releases/) -nro/homebrew
-   * [switch-sys-tweak](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub-no-forwarders.574675/) -cfw sysmodule/homebrew
-   * [Vertical/Horizontal Theme](https://github.com/hotshotz79/NX-Custom-Game-Icons) -NXTheme/homebrew theme file(s)
-   * [nx-titles-list-dumper](https://github.com/HamletDuFromage/nx-titles-list-dumper/releases) -nro/homebrew (optional/recommended)
- * PC
-   * [NX-GIC](https://github.com/hotshotz79/NX-Game-Icon-Customizer) -Icon Repo & Transfer tool
-     * FTP
-	 >:left_speech_bubble:winSCP is bundled with NXGIC
-	 >
+**Prerequisite** items recommended for this tutorial:
+
+ * Nintendo Switch :video_game:
+   * :one: [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere) -CFW 
+   * :two: [switch-sys-tweak](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub-no-forwarders.574675/) -cfw sysmodule/homebrew 
+   * :three: [ftpd](https://github.com/mtheall/ftpd/releases/) -nro/homebrew 
+   * :four: [NXThemesInstaller](https://github.com/exelix11/SwitchThemeInjector/releases/) -nro/homebrew 
+   * :five: [Vertical/Horizontal Theme](https://github.com/hotshotz79/NX-Custom-Game-Icons) -NXTheme/homebrew theme file(s)
+		* :arrow_right_hook: [my vertical themes](https://github.com/sodasoba1/nx-vertical-themes) -optional
+   * :six: [nx-titles-list-dumper](https://github.com/HamletDuFromage/nx-titles-list-dumper/releases) -nro/homebrew (*Pulled with nc-gix 1.3.0*)
+ * PC :computer:
+   * :one: [NX-GIC](https://github.com/hotshotz79/NX-Game-Icon-Customizer) -Icon Repo & Transfer tool
+     * :arrow_right_hook: FTP
 	 >![titledump](<.screenshots/nx-gic-rel.png>)
-   * Notepad++ with CsvQuery (optional)
+	 >
+	 >:left_speech_bubble:winSCP is bundled with NXGIC
+
    
 ***
 
@@ -32,32 +39,21 @@ Firstly grab [ftpd.nro](https://github.com/mtheall/ftpd/releases/) & [NXThemesIn
 
 ![titledump](<.screenshots/appstore.jpg>)
 
-***
-
->:exclamation:*(optional)* make titleID & icon matching easier grab [nx-titles-list-dumper](https://github.com/HamletDuFromage/nx-titles-list-dumper/releases) and place the NRO into `SD:/switch/`
->
->this program will dump all your titleIDs & Title names into a file ```titles.csv``` in the ```root``` of your SD card
->
->![ftpd](<.screenshots/nxtitledump.jpg>)
->
->![titledump](<.screenshots/titledump.jpg>)
->
->:exclamation:you can open this file in notepad but I recommend *notepad++* with the *CsvQuery plugin* that way you can sort the csv alphabetically
->
->![csv1](<.screenshots/sortcsv1.png>)![csv2](<.screenshots/sortcsv2.png>)
-
-***
-
 to get custom icons working you will need [switch-sys-tweak](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub-no-forwarders.574675/) a pre compiled version can be found on [gbatemp](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub-no-forwarders.574675/) with further information on this sysmodule.
->:left_speech_bubble:Currently *`00ff747765616bff_0-16-x_fix`* works with firmware 11 & [Atmosphere 0.18.1](https://github.com/Atmosphere-NX/Atmosphere) 
+>:left_speech_bubble: Currently *`00ff747765616bff_0-16-x_fix`* works with firmware 11 & [Atmosphere 0.18.1](https://github.com/Atmosphere-NX/Atmosphere) 
 
 once you have the precompiled sys-tweak place the contents of the archive into 
 ```SD:/atmosphere/contents/```
 the folder ```00FF747765616BFF``` should transfer over & look like similar to this:
 
 ![SD-contents](<.screenshots/sdcontents1.png>)
+>
+>`SD:/atmosphere/contents/00FF747765616BFF`
 
-for horizontal or vertical themes grab the preferred theme from [Hotshotz79 custom game icon theme repo](https://github.com/hotshotz79/NX-Custom-Game-Icons)
+***
+
+for horizontal or vertical themes grab the preferred theme from [Hotshotz79 custom game icon theme repo](https://github.com/hotshotz79/NX-Custom-Game-Icons) 
+ >or you casn use mine [my vertical themes](https://github.com/sodasoba1/nx-vertical-themes)
 
 __vertical__ or __horizontal__
 
@@ -69,11 +65,13 @@ i recommend grabbing all 3 types for either theme
 
 ***
 
-make a folder on the root of your SD card called ```themes``` if it doesn't already exist
+make a folder on the `root` of your SD card called ```themes``` if it doesn't already exist
 
-place the 3 ```themename.nxtheme``` in this folder.
+place the 3 ```.nxtheme``` in this folder.
 
 ![SD-contents](<.screenshots/sdcontents2.png>)
+>
+>`SD:/themes`
 
 now launch NXThemes Installer from hbmenu
 
@@ -100,43 +98,124 @@ if you haven't already downloaded [NX-GIC](https://github.com/hotshotz79/NX-Game
 When you first launch the program you will need to ```scan``` so you can pull the icon repos, there is also an offline method but I won't be going into that here.
 
 ![nxgic](<.screenshots/nx-gic.png>)
->:left_speech_bubble:this part may take a while as it's grabbing 2500+ icons
+>:left_speech_bubble: this part will take a while as it's grabbing 2800+ icons
 
-once the scan is finished choose the style based on which theme you installed by using the drop down menu
+Now lets setup the switch ip for ftp transfers `File > Settings`
+> ![ip](<.screenshots/settings.jpg>)
 
-![nxgic](<.screenshots/nx-gic2.png>)
->:left_speech_bubble: There are 3 options to choose from Default, Horizontal & Vertical
->
->*for this tutorial I'll be installing 1 2 switch icon for the Horizontal theme.*
+put your switch ip into the box
 
-select the number folder `0-9`(:one:) and double click the `1-2 switch icon`(:two:) you should now see the output section now has the icon queued up.
-![nxgic](<.screenshots/nx-gic3.png>)
->:exclamation:*(optional)* you can double check you have the correct TitleID by comparing the output section of NX-GIC with the titles.csv file pulled from your switch if you followed my optional recomendations and installed [nx-titles-list-dumper](https://github.com/HamletDuFromage/nx-titles-list-dumper/releases).
+> ![ip](<.screenshots/ip.jpg>)
 >
->you can edit titleID in the output section just by clicking the titleID and replacing the old titleID with your new titleID.
->
->:left_speech_bubble:The majority of my repo is based on US TID
->
->![nxgic-tidedit](<.screenshots/tid-edit.png>)
->
->:left_speech_bubble:in the above image I have replaced my sonic2 homebrew TitleID from `0520A8A066160000` to `05C8E9A645B8A000`
-
-when you are happy with your chosen icon(s) click `transfer`(:three:)
->
->:left_speech_bubble:As I stated I'll be doing the FTP method
-
-![nxgic](<.screenshots/nx-gic4.png>)
+>:left_speech_bubble:If you are unsure what your switch IP is open up FTPD on your switch, this is also the next step.
 
 open FTPD on your switch from the hbmenu and input the switch ip shown in ftpd into the FTP selection in nx-gic
 ![ftpd](<.screenshots/nxftpd.jpg>)
 
 ![nxgic](<.screenshots/ftpd1.jpg>)
->:left_speech_bubble:port number isn't required unless it's different from `5000` which is the default port for ftpd
+>:left_speech_bubble: port number isn't required but must be set to `5000` which is the default port for ftpd
+
+
+with ftpd running in nx-gic goto `Title IDs > Install NX Title List Dumper (NRO)`
+
+![nxgic](<.screenshots/nx-gic-tid.jpg>)
+
+Follow the instructions on the popup.
+
+![nxgic](<.screenshots/popup1.jpg>)
+>:left_speech_bubble: Our Switch IP Should Be here.
+hit `yes` and the process will begin
+
+>
+>if you want to manually do this hit `no` and you'll be taken to [nx-titles-list-dumper](https://github.com/HamletDuFromage/nx-titles-list-dumper/releases) download the and place the nro into `SD:/switch/`
+
+![nxgic](<.screenshots/yes.jpg>)
+
+hit `yes` and follow the instructions
+
+![nxgic](<.screenshots/yes2.jpg>)
+
+
+once the nro is transferred  load nx-titles-list-dumper from hbmenu
+
+![nxgic](<.screenshots/nxtitledump.jpg>)
+
+>nx-titles-list-dumper
+>
+>![nxgic](<.screenshots/nxtitledump2.jpg>)
+>
+>press `[A]` to dump your installed title IDs
+>
+>into `SD:/titles.csv` once it's `done` 
+>
+>press `[+]` to exit
+
+once `SD:/titles.csv` is dumped, open ftpd from the hbmenu again
+
+![ftpd](<.screenshots/nxftpd.jpg>)
+
+and hit `ok` in NX-GIC
+
+![ftpd](<.screenshots/ok.jpg>)
+
+>
+>:no_entry: if the ftp transfer of `titles.csv` fails (mine unfortunately does)
+>place `titles.csv` from the `root` of your SD card into the same folder as `NX-Game Icon Customizer.exe` 
+>
+>![ftpd](<.screenshots/yes3.jpg>):no_entry:
+
+![cvs-complete](<.screenshots/done2.jpg>)
+
+***
+![nxgic](<.screenshots/auto-nx-gic.jpg>)
+
+Click on `Auto GIC` then from the drop down select the `style` to match your installed theme
+
+in this example I've chosen **vertical**
+
+now nx-gic will match all of the icons found in titles.csv to icons on the repo
+click on `Add All to Output` to add the matching icons to the upload queue
+
+	you may notice some icons aren't found or matched this can be due to 1 of 2 reasons
+	
+	1. The Icon Doesn't exist.
+	2. The title ID you have is different from the title ID on the repo.
+	:arrow_right_hook: homebrew forwarders are usually not matched so you will have to manually change the TID in the output section
+  
+ you may also add icons individually auto-gic i believe picks the first icon found 
+ 
+ my repo might have multiple variants for certain games. you can show icons for just matching IDs by clicking `Title IDs > show Icons for Installed Games only`
+ 
+ ![nxgic](<.screenshots/gic-showins.jpg>)
+ 
+ you may also individually look through each icon folder and use the CSV list to match icons
+ by clicking `title IDs > Show List of Installed Games (CSV)
+ 
+  ![nxgic](<.screenshots/showcsv.jpg>)
+
+You can also edit your output before transferring files to the switch
+>![nxgic-tidedit](<.screenshots/tid.jpg>)
+>
+>you can edit titleID in the output section just by copying `CTRL+C` the titleID in the CSVlist and pasting`CTRL+V` the over titleID in output with your new titleID.
+>
+>:left_speech_bubble:The majority of my repo is based on US TID
+>
+>if you are unsure what the matching ID is in a game in this example it's Yo-Kai Watch
+>you can click on the `view` button and the icon will show up in which ever image viewer you use for jpgs, here you can set a custom title / Author & Version if you wish.
+ 
+ 
+***
+
+when you are happy with your chosen icon(s) click `transfer`
+
+>FTPD should be open on your switch
+>
+>![ftpd](<.screenshots/nxftpd.jpg>)
 
 ![nxgic](<.screenshots/nx-gic5.png>)
 
 click ```upload``` and you'll see the switch recieve the files, they're automatically transferred to the correct folders based off the titleID
-in `SD:/atmosphere/contents/[titleid]`
+in `SD:/atmosphere/contents/[titleid]/icon.jpg`
 
 ![nxgic](<.screenshots/ftpd2.jpg>)
 
@@ -144,10 +223,19 @@ The majority of my repo is based on usa titleID, homebrew forwarder titleIDs wil
 
 once you've finished transferring you can close ftpd 
 
-![HorizontalTheme](<.screenshots/notice.jpg>)
+>You may need to reboot for icons to refresh
+
+As you can see Yo-Kai Watch is renamed
+
+![yokai](<.screenshots/yokai.jpg>)
+
+![vTheme](<.screenshots/notice.jpg>)
 
 and check out all your new icons in `all software`
+
 ![finished](<.screenshots/done.jpg>)
+
+>Title renaming will not sort games in the order by title this is a cosmetic change only.
 
 >## :left_speech_bubble:feel free to request icons from me via GBATemp ##
 
