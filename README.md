@@ -61,7 +61,8 @@ atmosphere/
        ˪ toolbox.json
 ```
 
-I have the toolbox.json & boot.flag pre setup *[here](/setup-00FF747765616BFF.zip)* just copy the contect to the `root` of your sd card `SD:/`
+I have the toolbox.json & boot.flag pre setup *[here](/setup-00FF747765616BFF.zip)* just copy the contents to the `root` of your sd card `SD:/`
+you will still need to download and to rename the *[sys-tweak.nsp](https://github.com/p-sam/switch-sys-tweak/actions)* to `exefs.nsp`
 
 ***
 
