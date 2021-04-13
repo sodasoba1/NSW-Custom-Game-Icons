@@ -1,4 +1,4 @@
-![Header](<.screenshots/header.png>)
+![Header](<.screenshots/header.jpg>)
 ### Written for nx-gic v1.3.0 ###
 
 :memo: to use this repo correctly you will need to preapare your switch first :memo:
@@ -35,8 +35,38 @@ Firstly grab [ftpd.nro](https://github.com/mtheall/ftpd/releases/) & [NXThemesIn
 
 ![AppStore](<.screenshots/appstore.jpg>)
 
-to get custom icons working you will need [switch-sys-tweak](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub-no-forwarders.574675/) a pre compiled version can be found on [gbatemp](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub-no-forwarders.574675/) with further information on this sysmodule.
->:left_speech_bubble: Currently *`00ff747765616bff_0-16-x_fix`* works with firmware 11 & [Atmosphere 0.18.1](https://github.com/Atmosphere-NX/Atmosphere) 
+**atmosphere 0.19.0 a lot changed follow these steps**
+Grab [switch-sys-tweak](https://github.com/p-sam/switch-sys-tweak/actions) - the latest build is usually in `AMS X.XX.X git pull`
+You need to rename the *[sys-tweak.nsp](https://github.com/p-sam/switch-sys-tweak/actions)* to `exefs.nsp` and set up a *[toolbox.json](/setup-00FF747765616BFF.zip)* with the following contents:
+
+`SD:/atmosphere/contents/00FF747765616BFF/toolbox.json`
+
+```
+{
+  "name": "sys-tweak",
+  "tid": "00FF747765616BFF",
+  "requires_reboot": true
+}
+```
+>`SD:/atmosphere/contents/00FF747765616BFF/flags/boot2.flag` -empty file
+
+Once you've done that create this folder and contents on your SD card:
+```
+atmosphere/
+    ˪ contents/
+       ˪ 00FF747765616BFF/
+              ˪ flags/
+                  ˪ boot2.flag
+       ˪ exefs.nsp
+       ˪ toolbox.json
+```
+
+I have the toolbox.json & boot.flag pre setup *[here](/setup-00FF747765616BFF.zip)* just copy the contect to the `root` of your sd card `SD:/`
+
+***
+
+**atmosphere 0.18.0**
+a pre compiled version can be found on GBATEMP to get custom icons working you will need [switch-sys-tweak](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub-no-forwarders.574675/page-10#post-9366960) `NSAM` seems to work better if that crashes try the other version
 
 once you have the precompiled sys-tweak place the contents of the archive into 
 ```SD:/atmosphere/contents/```
@@ -45,6 +75,7 @@ the folder ```00FF747765616BFF``` should transfer over & look like similar to th
 ![SD-contents](<.screenshots/sdcontents1.png>)
 >
 >`SD:/atmosphere/contents/00FF747765616BFF`
+
 
 ***
 
