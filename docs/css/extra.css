@@ -1,0 +1,26 @@
+:root {
+	--md-primary-fg-color: #0ab379;
+	--md-primary-fg-color--dark: #0ab379;
+	--md-primary-fg-color--light: #0ab379;
+	--md-accent-fg-color: #f92ac1;
+}
+
+.wy-nav-content {
+	max-width: none;
+}
+
+/* Use code style in h elements */
+.md-typeset code {
+	background-color: var(--md-code-bg-color) !important;
+	border-radius: 0.1rem !important;
+	padding: 0 0.2941176471em !important;
+}
+
+.color-block {
+	height: 16px;
+	width: 16px;
+	display: inline-flex;
+	vertical-align: middle;
+	margin-right: 5px;
+	border: 1px solid white;
+}
