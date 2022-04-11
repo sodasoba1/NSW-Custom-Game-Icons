@@ -1,0 +1,24 @@
+site_name: NSW Custom Game Icons
+extra_javascript: [js/color_blocks.js]
+repo_url: https://github.com/sodasoba1/NSW-Custom-Game-Icons/
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: red
+    accent: purple
+markdown_extensions:
+    - admonition
+    - toc: # https://python-markdown.github.io/extensions/toc/
+          permalink: True
+          toc_depth: 4
+    - md_in_html
+nav:
+   - Home: 'index.md'
+   - Before You Start:
+                  - Prerequisites: 'pre.md'
+                  - Sys-Tweak: 'sys-tweak.md'
+   - Supported Themes for Vertical & Horizontal: 'supportedthemes.md'
+   - Installing A Theme: 'installingtheme.md'
+   - NX-GIC: 'usingnxgic.md'
+   - Thanks & Credits: 'thanks.md'
