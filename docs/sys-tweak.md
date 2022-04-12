@@ -3,11 +3,11 @@
 
 Build [switch-sys-tweak](https://github.com/p-sam/switch-sys-tweak) or alternatively use one of the links below of a pre compiled version.
 
-| LATEST VERSION:                                                                                                         | Tested on                              |
-| ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| [latest version on GBATemp](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub.574675/post-9738297) | HOS 14.1.0 - AMS 1.3.1  			 |
-| [p-sam sys-tweak github artifact](https://github.com/p-sam/switch-sys-tweak/actions)                                    | Same as above **expired as of writing** |
-| [16BitWonder-Git Repo](https://github.com/16BitWonder/switch-sys-tweak)								  | Forked Version	AMS 1.0.0		 |
+| LATEST VERSION:                                                                                                         | Tested on                               | link up? |
+| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | -------- |
+| [latest version on GBATemp](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub.574675/post-9738297) | HOS 14.1.0 - AMS 1.3.1  			  | :fontawesome-solid-check:{ .yes } |
+| [p-sam sys-tweak github artifact](https://github.com/p-sam/switch-sys-tweak/actions)                                    | Same as above **expired as of writing** | :material-close:{ .noggle } |
+| [16BitWonder-Git Repo](https://github.com/16BitWonder/switch-sys-tweak)								  | Forked Version	AMS 1.0.0		  | :fontawesome-solid-check:{ .yes } |
 
 You need to rename the *[sys-tweak.nsp](https://github.com/p-sam/switch-sys-tweak/actions)* to `exefs.nsp`
 
@@ -17,9 +17,10 @@ setup this folder structure and contents on your SD card:
 ```													  
 SDMC:/atmosphere/contents/00FF747765616BFF/flags/		  
                           │                └ boot2.flag  
-                          │ exefs.nsp					  
+                          ├ exefs.nsp					  
                           └ toolbox.json				  
-```													  
+```
+													  
 ---
 `SDMC:/atmosphere/contents/00FF747765616BFF/toolbox.json`
 ```
@@ -30,13 +31,13 @@ SDMC:/atmosphere/contents/00FF747765616BFF/flags/
 }
 ```
 
-!!! Error "boot2.flag should be a empty file!"
+!!! Error "boot2.flag should be a empty file! :material-alert-decagram:{ .no }"
 	`SDMC:/atmosphere/contents/00FF747765616BFF/flags/boot2.flag`
 
-!!! note "Pre Setup Archive of folder structure without sys-tweak"
+!!! new "Pre Setup Archive of folder structure without sys-tweak"
 	Alternatively I have the toolbox.json & boot.flag files pre setup *[here](https://github.com/sodasoba1/NSW-Custom-Game-Icons/raw/main/setup-00FF747765616BFF.zip)* 
       
-      simply copy the contents to the `root` of your sd card `SDMC:/`
+      simply copy the contents to the *{++root++}* of your sd card :fontawesome-solid-sd-card:{ .mild }
 	
 	you will still need to download and to rename the *[sys-tweak.nsp](https://github.com/p-sam/switch-sys-tweak/actions)* to `exefs.nsp`
 

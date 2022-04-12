@@ -1,3 +1,5 @@
+![NXThemes Installer](<img/nxthemeinst.jpg>)
+
 !!! note "Installing with NXThemes Installer"
 	Installing a theme from the internet is rather simple
 

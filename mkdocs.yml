@@ -1,4 +1,6 @@
 site_name: NSW Custom Game Icons
+extra_css:
+  - stylesheets/extra.css
 extra_javascript: [js/color_blocks.js]
 repo_url: https://github.com/sodasoba1/NSW-Custom-Game-Icons/
 theme:
@@ -13,6 +15,14 @@ markdown_extensions:
           permalink: True
           toc_depth: 4
     - md_in_html
+    - attr_list
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight
+    - pymdownx.critic
+    - pymdownx.superfences
+    - pymdownx.keys
 nav:
    - Home: 'index.md'
    - Before You Start:

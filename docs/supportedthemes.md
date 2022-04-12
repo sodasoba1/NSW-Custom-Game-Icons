@@ -1,10 +1,8 @@
 Grab a horizontal or vertical theme from
 
-[My Vertical Icon Theme Github Repo](https://github.com/sodasoba1/nx-vertical-themes)
+[My Vertical Icon Theme Github Repo](https://github.com/sodasoba1/nx-vertical-themes) | [My Themezer Profile](https://themezer.net/creators/458711011998957578)
 
-[My Themezer Profile](https://themezer.net/creators/458711011998957578)
-
-other themes are available
+more themes are available other than the ones below.
 
 
 !!! Important
@@ -29,7 +27,7 @@ Zzzribas Does have more themes.
 
 [Hotshotz79 Custom Game Icons repo](https://github.com/hotshotz79/NX-Custom-Game-Icons)
 
-one of the original vertical theme creators, our layouts have advanced a fair bit but these themes
+one of the original vertical theme creators, our layouts have advanced a fair bit but these themes are still good.
 
 |  Preview		  	       | NXThemes Download Code	  				  	      | HOS Version made on/for |
 |------------------------------|----------------------------------------------------------------|-------------------------|

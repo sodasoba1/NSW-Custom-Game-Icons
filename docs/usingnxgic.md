@@ -1,8 +1,9 @@
-Setting Up NX-GIC
+Setting Up NX-GIC :material-book-open-page-variant-outline:
 ---
 if you haven't already download [NX-GIC](https://github.com/hotshotz79/NX-Game-Icon-Customizer).
 
-When you first launch the program you will need to ```scan``` so you can pull the icon repos, there is also an offline method but I won't be going into that here.
+When you first launch the program you will need to ```scan``` so you can pull the icon repos
+!!!info "there is also an offline method but I won't be going into that here."
 
 ![nxgic](<img/nx-gic.png>)
 !!! Error "PLEASE NOTE"
@@ -19,15 +20,19 @@ Once complete we will set the switch ip for ftp transfers
 |--------------------|
 |![ip](<img/ip.jpg>)|
 
-!!! info "If you are unsure what your switch IP is open up FTPD on your switch, this is also the next step."
+If you are unsure what your switch IP is open up FTPD on your switch, this is also the next step.
 
-	open FTPD on your switch from the hbmenu and input the switch ip shown in ftpd into the FTP selection in nx-gic
-	![ftpd](<img/nxftpd.jpg>)
+open FTPD on your switch from the hbmenu and input the switch ip shown in ftpd into the FTP selection in nx-gic
 
-	![nxgic](<img/ftpd1.jpg>)
-	!!! warning "port number isn't required but must be set to `5000` which is the default port for ftpd"
+![ftpd](<img/nxftpd.jpg>)
 
-##Installing NX Title List Dumper
+![nxgic](<img/ftpd1.jpg>)
+!!! WARNING "important"
+		port number isn't required for `Switch IP Address` in nx-gic
+		
+		but must be set to `5000` which is the default port for ftpd
+
+##Installing NX Title List Dumper :fontawesome-solid-file-csv:
 ---
 
 with ftpd running on the switch lets install NX Title List Dumper from nx-gic
@@ -56,7 +61,7 @@ hit `yes` you will get a popup
 
 
 
-###Using NX Titles List Dumper
+###Using NX Titles List Dumper :fontawesome-solid-file-csv:
 ---
 
 Once the nro is transferred  load nx-titles-list-dumper from hbmenu
@@ -65,11 +70,11 @@ Once the nro is transferred  load nx-titles-list-dumper from hbmenu
 
 ![nxgic](<img/nxtitledump2.jpg>)
 
-press `(A)` to dump your installed title IDs
+press :material-alpha-a-circle:{ .btna } to dump your installed title IDs
 
-into `SD:/titles.csv` once it's `done` 
+this will place a file into `SD:/titles.csv` once it's `done` 
 
-press `+` to exit
+press :fontawesome-solid-circle-plus:{ .yes } to exit
 
 once `SD:/titles.csv` is dumped, open ftpd from the hbmenu again
 
@@ -79,10 +84,10 @@ and hit `ok` in NX-GIC
 
 ![ftpd](<img/ok.jpg>)
 
-!!! Warning
+!!! Warning "transfer failure?!"
 	if the ftp transfer of ***`titles.csv`*** fails (mine unfortunately did)
 
-	place `titles.csv` ___from___ the `root` of your SD card into the same folder as `NX-Game Icon Customizer.exe` 
+	place `titles.csv` :fontawesome-solid-file-csv: ___from___ the `root` of your SD card into the same folder as `NX-Game Icon Customizer.exe` 
 
 	![ftpd](<img/yes3.jpg>)
 
@@ -90,10 +95,10 @@ and hit `ok` in NX-GIC
 ![cvs-complete](<img/done2.jpg>)
 
 
-# Auto NX-GIC
+# Auto NX-GIC :material-auto-fix:
 ---
 
-Auto nx-gic can be used automatically select icons based off the installed titleIDs on your switch via `titles.cvs`
+Auto nx-gic can be used automatically select icons based off the installed titleIDs on your switch via `titles.csv`
 from the NX Titles List Dumper homebrew
 
 ![nxgic](<img/auto-nx-gic.jpg>)
@@ -120,7 +125,7 @@ click on `Add All to Output` to add the matching icons to the upload queue
  
 !!!info "my repo might have multiple variants for certain games, it might have older variations of a TID for homebrew between different icons"
 
-## Showing Icons Based off TitleID 
+## Showing Icons Based off TitleID :material-list-status:
 ---
  you can show icons matching installed TIDs by clicking
 
@@ -128,7 +133,7 @@ click on `Add All to Output` to add the matching icons to the upload queue
 
   ![nxgic](<img/gic-showins.jpg>)
 
-## View A List of installed Games
+## View A List of installed Games :material-format-list-checkbox:
 ---
  you may also individually look through each icon folder and use the CSV list to match icons
  by clicking 
@@ -136,20 +141,20 @@ click on `Add All to Output` to add the matching icons to the upload queue
  `title IDs > Show List of Installed Games (CSV)`
  ![nxgic](<img/showcsv.jpg>)
 
-#Editing your Output before tranferring
+#Editing your Output before tranferring :material-image-edit:
 ---
 
 It's possible to edit your output before begining to transfer files to the switch
 
 ![nxgic-tidedit](<img/tid.jpg>)
 
-you can edit titleID in the output section just by copying `CTRL+C` the titleID in the CSVlist and pasting`CTRL+V` the over titleID in output with your new titleID.
+you can edit titleID in the output section just by copying ++ctrl+c++ the titleID in the CSVlist and pasting ++ctrl+v++ the over titleID in output with your new titleID.
 
 if your output has a game with a title you're unsure of like a japanese title in the example above
 
-you can click on the `view` button and the icon will open and show you the image in the queue
+you can click on the {==:material-view-sequential-outline:==}`view` button and the icon will open and show you the image in the queue
 
-You can set a `custom title` / `Author` & `Version` which is excellent for Fan translations
+:octicons-pencil-24: You can set a `custom title` / `Author` & `Version` which is excellent for Fan translations
 
 editing in NX-GIC will make a config.ini file and place it in the same folder as the custom icon
 ```
@@ -170,7 +175,7 @@ This isn't a permanent "rename" it works the exact same way the icon takeover do
 	you can also use this blazing fast TID/Game search database
 	[https://titledblookup.stackblitz.io/](https://titledblookup.stackblitz.io/)
  
-#Transferring
+#Transferring :material-transfer:
 ---
 
 when you are happy with your chosen icon(s) click `transfer`
@@ -193,7 +198,7 @@ once you've finished transferring you can close ftpd
 
 !!!Warning "You may need to reboot for icons to refresh"
 
-##Recommended transfer method
+##Recommended transfer method :material-order-bool-descending-variant:
 ---
 
 I recommend using the ftp method over mtp as i personally find ftp to be faster, especially when you are bulk transferring custom icons, so that's the method I will be outlining in this tutorial.
