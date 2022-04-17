@@ -1,6 +1,7 @@
 site_name: NSW Custom Game Icons
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/hint.min.css
 extra_javascript: [js/color_blocks.js]
 repo_url: https://github.com/sodasoba1/NSW-Custom-Game-Icons/
 theme:
@@ -9,6 +10,8 @@ theme:
     scheme: slate
     primary: red
     accent: purple
+  logo: img/logo.png
+
 markdown_extensions:
     - admonition
     - toc: # https://python-markdown.github.io/extensions/toc/
@@ -23,12 +26,21 @@ markdown_extensions:
     - pymdownx.critic
     - pymdownx.superfences
     - pymdownx.keys
+    - pymdownx.details
+plugins:
+  - tooltips
 nav:
    - Home: 'index.md'
    - Before You Start:
                   - Prerequisites: 'pre.md'
                   - Sys-Tweak: 'sys-tweak.md'
-   - Supported Themes for Vertical & Horizontal: 'supportedthemes.md'
-   - Installing A Theme: 'installingtheme.md'
-   - NX-GIC: 'usingnxgic.md'
-   - Thanks & Credits: 'thanks.md'
+   - Themes:
+                  - Supported Themes for Vertical & Horizontal: 'supportedthemes.md'
+                  - Installing A Theme: 'installingtheme.md'
+   - NX-GIC:
+                  - NX-GIC: 'usingnxgic.md'
+                  - Offline NX-GIC: 'offlinenxgic.md'
+                  - TroubleShooting: 'tblsht.md'
+   - extra:
+                  - Thanks & Credits: 'thanks.md'
+                  - 14.0 Theme Fix: 'https://sodasoba1.github.io/FlaunchFix/'

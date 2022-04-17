@@ -1,19 +1,19 @@
-![NXThemes Installer](<img/nxthemeinst.jpg>)
+[![NXThemes Installer](<img/nxthemeinst.jpg>)]{https://github.com/exelix11/SwitchThemeInjector|bottom|info}
 
 !!! note "Installing with NXThemes Installer"
 	Installing a theme from the internet is rather simple
 
 use a code to directly download a theme
 
-![nxtheme-dl](<img/nxtheme-dl.jpg>)
+[![nxtheme-dl](<img/nxtheme-dl.jpg>)]{input the code into the searchbox|info}
 
 Click ```search```
 
-![nxtheme-dl](<img/nxtheme-dl1.png>)
+[![nxtheme-dl](<img/nxtheme-dl1.png>)]{while searching 'Loading...' screen is shown|info}
 
 you will then be shown the theme preview
 
-![nxtheme-dl](<img/nxtheme-dl2.jpg>)
+[![nxtheme-dl](<img/nxtheme-dl2.jpg>)]{select the parts of the theme you want to install|info}
 
 download the theme by clicking ```Download all```
 

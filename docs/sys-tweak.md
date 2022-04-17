@@ -5,13 +5,13 @@ Build [switch-sys-tweak](https://github.com/p-sam/switch-sys-tweak) or alternati
 
 | LATEST VERSION:                                                                                                         | Tested on                               | link up? |
 | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | -------- |
-| [latest version on GBATemp](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub.574675/post-9738297) | HOS 14.1.0 - AMS 1.3.1  			  | :fontawesome-solid-check:{ .yes } |
-| [p-sam sys-tweak github artifact](https://github.com/p-sam/switch-sys-tweak/actions)                                    | Same as above **expired as of writing** | :material-close:{ .noggle } |
-| [16BitWonder-Git Repo](https://github.com/16BitWonder/switch-sys-tweak)								  | Forked Version	AMS 1.0.0		  | :fontawesome-solid-check:{ .yes } |
+| [[latest version on GBATemp](https://gbatemp.net/threads/custom-game-icons-tutorial-and-sharing-hub.574675/post-9738297)]{UP|success} | HOS 14.1.0 - AMS 1.3.1  			  | :fontawesome-solid-check:{ .yes } |
+| [[p-sam sys-tweak github artifact](https://github.com/p-sam/switch-sys-tweak/actions)]{DOWN|error}                                    | [Same as above **expired as of writing**]{DOWN|error} | [:material-close:{ .noggle }]{DOWN|error} |
+| [[16BitWonder-Git Repo](https://github.com/16BitWonder/switch-sys-tweak)]{Older Version|warning}								  | Forked Version	AMS 1.0.0		  | :fontawesome-solid-check:{ .yes } |
 
-You need to rename the *[sys-tweak.nsp](https://github.com/p-sam/switch-sys-tweak/actions)* to `exefs.nsp`
+You need to rename the [*[sys-tweak.nsp](https://github.com/p-sam/switch-sys-tweak/actions)* to `exefs.nsp`]{github.com/p-sam/|right|rounded|bounce|success} 
 
-Once you've done that place `exefs.nsp` in `SDMC:/atmosphere/contents/00FF747765616BFF`
+Once you've done that place `exefs.nsp` in [`SDMC:/atmosphere/contents/00FF747765616BFF`]{SD Folder location|info}
 setup this folder structure and contents on your SD card:
 
 ```													  
@@ -22,7 +22,9 @@ SDMC:/atmosphere/contents/00FF747765616BFF/flags/
 ```
 													  
 ---
-`SDMC:/atmosphere/contents/00FF747765616BFF/toolbox.json`
+toolbox.json is a settings file so sys-tweak can be switched off and on in the homebrew menu via a homebrew toolbox
+ deepsea toolbox
+[`SDMC:/atmosphere/contents/00FF747765616BFF/toolbox.json`]{json location on the SD Card|info}
 ```
 {
   "name": "sys-tweak",
@@ -31,20 +33,18 @@ SDMC:/atmosphere/contents/00FF747765616BFF/flags/
 }
 ```
 
-!!! Error "boot2.flag should be a empty file! :material-alert-decagram:{ .no }"
-	`SDMC:/atmosphere/contents/00FF747765616BFF/flags/boot2.flag`
+boot2.flag should be a empty file! [:material-alert-decagram:{ .no }]{rename a blank txt file|right|error}
+	[`SDMC:/atmosphere/contents/00FF747765616BFF/flags/boot2.flag`]{empty text file|error}
 
 !!! new "Pre Setup Archive of folder structure without sys-tweak"
-	Alternatively I have the toolbox.json & boot.flag files pre setup *[here](https://github.com/sodasoba1/NSW-Custom-Game-Icons/raw/main/setup-00FF747765616BFF.zip)* 
+	Alternatively I have the toolbox.json & boot.flag files pre setup [*[here](https://github.com/sodasoba1/NSW-Custom-Game-Icons/raw/main/setup-00FF747765616BFF.zip)*]{Download|success} 
       
-      simply copy the contents to the *{++root++}* of your sd card :fontawesome-solid-sd-card:{ .mild }
+      simply copy the contents to the [*{++root++}* of your sd card :fontawesome-solid-sd-card:{ .mild }]{SDMC:/|info|right}
 	
 	you will still need to download and to rename the *[sys-tweak.nsp](https://github.com/p-sam/switch-sys-tweak/actions)* to `exefs.nsp`
 
-once you have finished your sys-tweak folder ```00FF747765616BFF``` it should like similar to this:
-
->`SD:/atmosphere/contents/00FF747765616BFF/`
->![SD-contents](<img/sdcontents1.png>)
+once you have finished your sys-tweak folder [`00FF747765616BFF`]{SD:/atmosphere/contents/00FF747765616BFF/|bottom} it should like similar to this:
+[![SD-contents](<img/sdcontents1.png>)]{SD:/atmosphere/contents/00FF747765616BFF/|right}
 
 
 ### Older Version ###

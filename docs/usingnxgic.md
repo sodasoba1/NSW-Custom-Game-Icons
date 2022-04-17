@@ -7,18 +7,18 @@ When you first launch the program you will need to ```scan``` so you can pull th
 
 ![nxgic](<img/nx-gic.png>)
 !!! Error "PLEASE NOTE"
-	the icon repo is over 300mb in zip format with over 4700 extracting can be slow
+	the icon repo is over 300mb in zip format with over 4700 files extracting can be slow
 
 Once complete we will set the switch ip for ftp transfers 
 *within NX-CIG*
 
-|	`File > Settings`	  |
-|-------------------------|
-|![ip](<img/settings.jpg>)|
+`File > Settings`
 
-| put your switch ip into the `Switch IP Address` textbox |
-|--------------------|
-|![ip](<img/ip.jpg>)|
+![ip](<img/settings.jpg>)
+
+put your switch ip into the `Switch IP Address` textbox
+
+[![ip](<img/ip.jpg>)]{input your switch IP into the textbox|info}
 
 If you are unsure what your switch IP is open up FTPD on your switch, this is also the next step.
 
@@ -26,7 +26,7 @@ open FTPD on your switch from the hbmenu and input the switch ip shown in ftpd i
 
 ![ftpd](<img/nxftpd.jpg>)
 
-![nxgic](<img/ftpd1.jpg>)
+[![nxgic](<img/ftpd1.jpg>)]{Your switch IP will be shown when you load ftpd|info}
 !!! WARNING "important"
 		port number isn't required for `Switch IP Address` in nx-gic
 		
@@ -37,13 +37,13 @@ open FTPD on your switch from the hbmenu and input the switch ip shown in ftpd i
 
 with ftpd running on the switch lets install NX Title List Dumper from nx-gic
 
-|`Title IDs > Install NX Title List Dumper (NRO)`|
-|-------------|
-|![nxgic-tid](<img/nx-gic-tid.jpg>)|
+`Title IDs > Install NX Title List Dumper (NRO)`
+
+![nxgic-tid](<img/nx-gic-tid.jpg>)
 
 Follow the instructions on the popup.
 
-![nxgic](<img/popup1.jpg>)
+[![nxgic](<img/popup1.jpg>)]{If you have followed the steps to adding the IP it will show up on this screen|large|error}
 
 Our Switch IP Should Be here.
 hit `yes` and the process will begin
@@ -87,7 +87,7 @@ and hit `ok` in NX-GIC
 !!! Warning "transfer failure?!"
 	if the ftp transfer of ***`titles.csv`*** fails (mine unfortunately did)
 
-	place `titles.csv` :fontawesome-solid-file-csv: ___from___ the `root` of your SD card into the same folder as `NX-Game Icon Customizer.exe` 
+	place `titles.csv` :fontawesome-solid-file-csv: ___from___ the [`root`]{SDMC:/|success} of your SD card into the same folder as `NX-Game Icon Customizer.exe` 
 
 	![ftpd](<img/yes3.jpg>)
 
@@ -131,7 +131,7 @@ click on `Add All to Output` to add the matching icons to the upload queue
 
  `Title IDs > show Icons for Installed Games only`
 
-  ![nxgic](<img/gic-showins.jpg>)
+  [![nxgic](<img/gic-showins.jpg>)]{Setting this option will show icons that match what's installed on the switch based off the dumped titles.csv file|large|info}
 
 ## View A List of installed Games :material-format-list-checkbox:
 ---
@@ -139,7 +139,7 @@ click on `Add All to Output` to add the matching icons to the upload queue
  by clicking 
  
  `title IDs > Show List of Installed Games (CSV)`
- ![nxgic](<img/showcsv.jpg>)
+ [![nxgic](<img/showcsv.jpg>)]{Use the CSVlist to compare titles with icons|info}
 
 #Editing your Output before tranferring :material-image-edit:
 ---
@@ -148,7 +148,7 @@ It's possible to edit your output before begining to transfer files to the switc
 
 ![nxgic-tidedit](<img/tid.jpg>)
 
-you can edit titleID in the output section just by copying ++ctrl+c++ the titleID in the CSVlist and pasting ++ctrl+v++ the over titleID in output with your new titleID.
+you can edit titleID in the output section just by copying [++ctrl+c++]{copy} the titleID in the CSVlist and pasting [++ctrl+v++]{paste} the over titleID in output with your new titleID.
 
 if your output has a game with a title you're unsure of like a japanese title in the example above
 
@@ -163,17 +163,17 @@ name=my custom title name game
 author=someone
 display_version=X.X.X
 ```
-you can see Yo-Kai Watch is renamed from japanese in the example below
+you can see Yo-Kai Watch is renamed from japanese (妖怪ウォッチ) in the example below
 
-![yokai](<img/yokai.jpg>)
+[![yokai](<img/yokai.jpg>)]{Yo-Kai Watch Renamed from the japanese title 妖怪ウォッチ}
 
-![vTheme](<img/notice.jpg>)
+[![vTheme](<img/notice.jpg>)]{'妖怪ウォッチ' is renamed to 'Yo-Kai Watch' on the homescreen also|info}
 
 This isn't a permanent "rename" it works the exact same way the icon takeover does.
 
 !!!info "The majority of my repo is based on US TID"
 	you can also use this blazing fast TID/Game search database
-	[https://titledblookup.stackblitz.io/](https://titledblookup.stackblitz.io/)
+	[[https://titledblookup.stackblitz.io/](https://titledblookup.stackblitz.io/)]{Fast TitleID database lookup written by slluxx}
  
 #Transferring :material-transfer:
 ---
@@ -187,7 +187,7 @@ when you are happy with your chosen icon(s) click `transfer`
 
 hopfully you have already setup the IP of your switch as previously shown
 
-![nxgic](<img/nx-gic5.png>)
+[![nxgic](<img/nx-gic5.png>)]{If you clear the queue all the icons you have added to the output will delete after uploading|large|right|warning}
 
 click ```upload``` and you'll see the switch recieve the files, they're automatically transferred to the correct folders based off the titleID
 in `SD:/atmosphere/contents/[titleid]/icon.jpg`
@@ -196,9 +196,9 @@ in `SD:/atmosphere/contents/[titleid]/icon.jpg`
 
 once you've finished transferring you can close ftpd 
 
-!!!Warning "You may need to reboot for icons to refresh"
+!!!Warning "You will need to reboot for icons to refresh"
 
 ##Recommended transfer method :material-order-bool-descending-variant:
 ---
 
-I recommend using the ftp method over mtp as i personally find ftp to be faster, especially when you are bulk transferring custom icons, so that's the method I will be outlining in this tutorial.
+I recommend using the ftp method over mtp as i personally find ftp to be a lot faster, especially when you are bulk transferring custom icons, that's the method I have always used.
