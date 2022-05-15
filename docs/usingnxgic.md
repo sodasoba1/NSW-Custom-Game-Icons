@@ -18,24 +18,23 @@ Once complete we will set the switch ip for ftp transfers
 
 put your switch ip into the `Switch IP Address` textbox
 
-[![ip](<img/ip.jpg>)]{input your switch IP into the textbox|info}
+`UserName` / `Password` credentials 
 
-If you are unsure what your switch IP is open up FTPD on your switch, this is also the next step.
+`SteamGridDB API Key`
 
-open FTPD on your switch from the hbmenu and input the switch ip shown in ftpd into the FTP selection in nx-gic
+[![ip](<img/ip.jpg>)]{Details how to find and setup can be found in the Prerequisites section|info}
 
-![ftpd](<img/nxftpd.jpg>)
 
-[![nxgic](<img/ftpd1.jpg>)]{Your switch IP will be shown when you load ftpd|info}
-!!! WARNING "important"
-		port number isn't required for `Switch IP Address` in nx-gic
+!!! bug "1.4.0 bug: NOW CLOSE NX-GIC AFTER SAVING"
+		once you have saved all the details be sure to `Close` NX-GIC
+		and re-open the application before you continue
 		
-		but must be set to `5000` which is the default port for ftpd
+		this will fix the no login credentials found when you first try to open a FTP connection
 
 ##Installing NX Title List Dumper :fontawesome-solid-file-csv:
 ---
 
-with ftpd running on the switch lets install NX Title List Dumper from nx-gic
+with `sys-ftpd-light` running on the switch lets install NX Title List Dumper from nx-gic
 
 `Title IDs > Install NX Title List Dumper (NRO)`
 
@@ -48,16 +47,14 @@ Follow the instructions on the popup.
 Our Switch IP Should Be here.
 hit `yes` and the process will begin
 
-!!!info "Manual Installing NX Titles List Dumper"
-	if you want to install manually hit `no` and you'll be taken to [nx-titles-list-dumper](https://github.com/HamletDuFromage/nx-titles-list-dumper/releases) 
-	
-	download the and place the .nro into `SD:/switch/`
-
-![yes](<img/yes.jpg>)
+![yes](<img/nx-gic-tid2.jpg>)
 
 hit `yes` you will get a popup 
 
-![yes-popup](<img/yes2.jpg>)
+!!!Warning "Don't click anything yet"
+	leave this pop up open and move to the switch and follow the steps for NX Titles List Dumper
+
+![yes-popup](<img/nx-gic-tid3.jpg>)
 
 
 
@@ -76,13 +73,17 @@ this will place a file into `SD:/titles.csv` once it's `done`
 
 press :fontawesome-solid-circle-plus:{ .yes } to exit
 
-once `SD:/titles.csv` is dumped, open ftpd from the hbmenu again
+once `SD:/titles.csv` is dumped you can click `OK`
 
-![ftpd](<img/nxftpd.jpg>)
+![yes-popup](<img/nx-gic-tid3.jpg>)
 
 and hit `ok` in NX-GIC
 
 ![ftpd](<img/ok.jpg>)
+
+If everything is sucessful you will see the completed
+
+![cvs-complete](<img/done2.jpg>)
 
 !!! Warning "transfer failure?!"
 	if the ftp transfer of ***`titles.csv`*** fails (mine unfortunately did)
@@ -90,10 +91,6 @@ and hit `ok` in NX-GIC
 	place `titles.csv` :fontawesome-solid-file-csv: ___from___ the [`root`]{SDMC:/|success} of your SD card into the same folder as `NX-Game Icon Customizer.exe` 
 
 	![ftpd](<img/yes3.jpg>)
-
-
-![cvs-complete](<img/done2.jpg>)
-
 
 # Auto NX-GIC :material-auto-fix:
 ---
@@ -181,20 +178,19 @@ This isn't a permanent "rename" it works the exact same way the icon takeover do
 when you are happy with your chosen icon(s) click `transfer`
 
 
-!!! note "FTPD should be open on your switch"
+!!! warning "sys-ftpd-light should be enabled on your switch"
 
-![ftpd](<img/nxftpd.jpg>)
-
-hopfully you have already setup the IP of your switch as previously shown
+hopfully you have already setup the IP of your switch as previously shown, click the ftp method
 
 [![nxgic](<img/nx-gic5.png>)]{If you clear the queue all the icons you have added to the output will delete after uploading|large|right|warning}
 
 click ```upload``` and you'll see the switch recieve the files, they're automatically transferred to the correct folders based off the titleID
 in `SD:/atmosphere/contents/[titleid]/icon.jpg`
 
-![nxgic](<img/ftpd2.jpg>)
+[![nxgic](<img/nx-gic6.png>)]{If you clear the queue all the icons you have added to the output will delete after uploading|large|right|warning}
 
-once you've finished transferring you can close ftpd 
+
+once you've finished transferring you will see success in green
 
 !!!Warning "You will need to reboot for icons to refresh"
 

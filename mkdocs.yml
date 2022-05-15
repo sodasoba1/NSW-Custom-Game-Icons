@@ -34,12 +34,17 @@ nav:
    - Before You Start:
                   - Prerequisites: 'pre.md'
                   - Sys-Tweak: 'sys-tweak.md'
+                  - Sys-ftpd-light: 'sys-ftpd-light.md'
+                  - SteamGridDB API: 'sg-api.md'
    - Themes:
                   - Supported Themes for Vertical & Horizontal: 'supportedthemes.md'
                   - Installing A Theme: 'installingtheme.md'
    - NX-GIC:
                   - NX-GIC: 'usingnxgic.md'
                   - Offline NX-GIC: 'offlinenxgic.md'
+                  - Add New Via URL: 'add-new.md'
+                  - Add New Via SteamGridDB: 'add-new-sg.md'
+                  - Add New Via Browse: 'add-new-br.md'
                   - TroubleShooting: 'tblsht.md'
    - extra:
                   - Thanks & Credits: 'thanks.md'
