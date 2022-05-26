@@ -3,13 +3,13 @@
 
 
 
-!!! attention "Written for nx-gic v1.3.0"
+!!! attention "Written for nx-gic v1.4.0"
     to use this repo correctly you will need to preapare your switch first
 
     this entire guide and process only works on atmosphere
 
 
-!!! tip "Icon Requests - Guide updated *updated 17th April*"
+!!! tip "Icon Requests - Guide updated *updated 15th May*"
 
 feel free to request custom icons:
 
