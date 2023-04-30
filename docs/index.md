@@ -9,7 +9,7 @@
     this entire guide and process only works on atmosphere
 
 
-!!! tip "Icon Requests - Guide updated *updated 15th May*"
+!!! tip "Icon Requests - Guide updated *updated 30th April 2023*"
 
 feel free to request custom icons:
 

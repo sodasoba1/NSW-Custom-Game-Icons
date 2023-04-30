@@ -7,7 +7,11 @@ When you first launch the program you will need to ```scan``` so you can pull th
 
 ![nxgic](<img/nx-gic.png>)
 !!! Error "PLEASE NOTE"
-	the icon repo is over 300mb in zip format with over 4700 files extracting can be slow
+	the icon repo is over 250mb in zip format with over 3100 files extracting can be slow
+	
+	I have moved Horizontal & Square icons to a seperate repo to save downloading and extracting nx-gic
+	
+	the process is still a little slow
 
 Once complete we will set the switch ip for ftp transfers 
 *within NX-CIG*
@@ -185,7 +189,7 @@ hopfully you have already setup the IP of your switch as previously shown, click
 [![nxgic](<img/nx-gic5.png>)]{If you clear the queue all the icons you have added to the output will delete after uploading|large|right|warning}
 
 click ```upload``` and you'll see the switch recieve the files, they're automatically transferred to the correct folders based off the titleID
-in `SD:/atmosphere/contents/[titleid]/icon.jpg`
+in `SDMC:/atmosphere/contents/[titleid]/icon.jpg`
 
 [![nxgic](<img/nx-gic6.png>)]{If you clear the queue all the icons you have added to the output will delete after uploading|large|right|warning}
 

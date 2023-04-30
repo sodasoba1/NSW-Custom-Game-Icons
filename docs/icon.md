@@ -1,11 +1,15 @@
 Icons
 ---
 
-   [DEFAULT ICONS](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Default)
+Removed for now:
+
+:fontawesome-solid-xmark:{.no}  {--[DEFAULT ICONS]--}
    
-   [HORIZONTAL ICONS](https://github.com/sodasoba1/NX-Custom-Game-Icons-Horizontal/tree/main/Horizontal)
+:fontawesome-solid-xmark:{.no}  {--[HORIZONTAL ICONS]--}
+
+Still Available:
    
-   [VERTICAL ICONS](https://github.com/sodasoba1/NSW-Custom-Game-Icons/tree/main/Vertical)
+:fontawesome-solid-check:{.yes}   {++[VERTICAL ICONS](https://github.com/sodasoba1/NSW-Custom-Game-Icons/tree/main/Vertical)++}
 
 Searching for Icons
 ---

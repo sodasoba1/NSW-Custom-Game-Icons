@@ -47,5 +47,7 @@ nav:
                   - Add New Via Browse: 'add-new-br.md'
                   - TroubleShooting: 'tblsht.md'
    - extra:
+                  - Icon Search: 'icon.md'
+                  - How to make your own icons: 'diy.md'
                   - Thanks & Credits: 'thanks.md'
                   - 14.0 Theme Fix: 'https://sodasoba1.github.io/FlaunchFix/'
