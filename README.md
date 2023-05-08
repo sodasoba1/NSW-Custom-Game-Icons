@@ -1,3 +1,4 @@
-![Header](<.screenshots/SIG1.png>)
+![alt text][logo]
 
-## [How to use this repo](https://sodasoba1.github.io/NSW-Custom-Game-Icons/) ##
+[logo]: wiki.png "NX-GiC Repo "
+## [SodaSoba1.github.io / NSW-Custom-Game-Icons](https://sodasoba1.github.io/NSW-Custom-Game-Icons/)
